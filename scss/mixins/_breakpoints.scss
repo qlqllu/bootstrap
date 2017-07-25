@@ -57,6 +57,26 @@
     @media (min-width: $min) {
       @content;
     }
+
+    @debug inspect(&);
+
+    $_min: "'#{$min}'";
+
+    @if not & {
+      .container-wab[min-width~=#{$_min}] {
+        @content;
+      }
+    }@else if inspect(&) == '(.container,)' or inspect(&) == '(.container-fluid,)'{
+      &-wab[min-width~=#{$_min}] {
+        @content;
+      }
+    }@else{
+      @at-root .container-wab[min-width~=#{$_min}] & {
+        @content;
+      }
+    }
+
+    
   } @else {
     @content;
   }
