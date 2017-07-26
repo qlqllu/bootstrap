@@ -4,7 +4,7 @@
   $_value: "'#{$value}'";
 
   @if not & {
-    .container-wab[#{$prop}~=#{$_value}] {
+    .jimu-container-eq[#{$prop}~=#{$_value}] {
       @content;
     }
   }@else if inspect(&) == '(.container-fluid,)'{
@@ -14,7 +14,7 @@
   }@else if inspect(&) == '(.container,)'{
     @content;
   }@else{
-    @at-root .container-wab[#{$prop}~=#{$_value}] & {
+    @at-root .jimu-container-eq[#{$prop}~=#{$_value}] & {
       @content;
     }
   }
