@@ -7,10 +7,12 @@
     .container-wab[#{$prop}~=#{$_value}] {
       @content;
     }
-  }@else if inspect(&) == '(.container,)' or inspect(&) == '(.container-fluid,)'{
+  }@else if inspect(&) == '(.container-fluid,)'{
     &-wab[#{$prop}~=#{$_value}] {
       @content;
     }
+  }@else if inspect(&) == '(.container,)'{
+    @content;
   }@else{
     @at-root .container-wab[#{$prop}~=#{$_value}] & {
       @content;
