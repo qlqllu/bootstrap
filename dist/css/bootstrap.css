@@ -3730,6 +3730,16 @@ tbody.collapse.show {
   right: 1rem;
 }
 
+.container-wab[max-width~='575px'] .navbar-toggleable .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='575px'] .navbar-toggleable > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .container-wab[min-width~='576px'] .navbar-toggleable {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -3758,6 +3768,16 @@ tbody.collapse.show {
 
 .container-wab[min-width~='576px'] .navbar-toggleable .navbar-toggler {
   display: none;
+}
+
+.container-wab[max-width~='767px'] .navbar-toggleable-sm .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='767px'] .navbar-toggleable-sm > .container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .container-wab[min-width~='768px'] .navbar-toggleable-sm {
@@ -3790,6 +3810,16 @@ tbody.collapse.show {
   display: none;
 }
 
+.container-wab[max-width~='991px'] .navbar-toggleable-md .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='991px'] .navbar-toggleable-md > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .container-wab[min-width~='992px'] .navbar-toggleable-md {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -3818,6 +3848,16 @@ tbody.collapse.show {
 
 .container-wab[min-width~='992px'] .navbar-toggleable-md .navbar-toggler {
   display: none;
+}
+
+.container-wab[max-width~='1199px'] .navbar-toggleable-lg .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='1199px'] .navbar-toggleable-lg > .container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .container-wab[min-width~='1200px'] .navbar-toggleable-lg {
@@ -8663,7 +8703,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   display: none !important;
 }
 
+.container-wab[max-width~='575px'] .hidden-xs-down {
+  display: none !important;
+}
+
 .container-wab[min-width~='576px'] .hidden-sm-up {
+  display: none !important;
+}
+
+.container-wab[max-width~='767px'] .hidden-sm-down {
   display: none !important;
 }
 
@@ -8671,7 +8719,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   display: none !important;
 }
 
+.container-wab[max-width~='991px'] .hidden-md-down {
+  display: none !important;
+}
+
 .container-wab[min-width~='992px'] .hidden-lg-up {
+  display: none !important;
+}
+
+.container-wab[max-width~='1199px'] .hidden-lg-down {
   display: none !important;
 }
 
