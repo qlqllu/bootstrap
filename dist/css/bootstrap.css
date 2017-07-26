@@ -4664,6 +4664,16 @@ tbody.collapse.show {
   }
 }
 
+.container-wab[max-width~='575px'] .navbar-toggleable .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='575px'] .navbar-toggleable > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 @media (min-width: 576px) {
   .navbar-toggleable {
     flex-direction: row;
@@ -4730,6 +4740,16 @@ tbody.collapse.show {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+.container-wab[max-width~='767px'] .navbar-toggleable-sm .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='767px'] .navbar-toggleable-sm > .container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @media (min-width: 768px) {
@@ -4800,6 +4820,16 @@ tbody.collapse.show {
   }
 }
 
+.container-wab[max-width~='991px'] .navbar-toggleable-md .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='991px'] .navbar-toggleable-md > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 @media (min-width: 992px) {
   .navbar-toggleable-md {
     flex-direction: row;
@@ -4866,6 +4896,16 @@ tbody.collapse.show {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+.container-wab[max-width~='1199px'] .navbar-toggleable-lg .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.container-wab[max-width~='1199px'] .navbar-toggleable-lg > .container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @media (min-width: 1200px) {
@@ -11645,6 +11685,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.container-wab[max-width~='575px'] .hidden-xs-down {
+  display: none !important;
+}
+
 @media (min-width: 576px) {
   .hidden-sm-up {
     display: none !important;
@@ -11659,6 +11703,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-sm-down {
     display: none !important;
   }
+}
+
+.container-wab[max-width~='767px'] .hidden-sm-down {
+  display: none !important;
 }
 
 @media (min-width: 768px) {
@@ -11677,6 +11725,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.container-wab[max-width~='991px'] .hidden-md-down {
+  display: none !important;
+}
+
 @media (min-width: 992px) {
   .hidden-lg-up {
     display: none !important;
@@ -11691,6 +11743,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-lg-down {
     display: none !important;
   }
+}
+
+.container-wab[max-width~='1199px'] .hidden-lg-down {
+  display: none !important;
 }
 
 @media (min-width: 1200px) {

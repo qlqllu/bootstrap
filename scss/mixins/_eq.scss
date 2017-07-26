@@ -1,0 +1,19 @@
+@mixin gen-eq-rules($prop, $value){
+  // @debug inspect(&);
+
+  $_value: "'#{$value}'";
+
+  @if not & {
+    .container-wab[#{$prop}~=#{$_value}] {
+      @content;
+    }
+  }@else if inspect(&) == '(.container,)' or inspect(&) == '(.container-fluid,)'{
+    &-wab[#{$prop}~=#{$_value}] {
+      @content;
+    }
+  }@else{
+    @at-root .container-wab[#{$prop}~=#{$_value}] & {
+      @content;
+    }
+  }
+}

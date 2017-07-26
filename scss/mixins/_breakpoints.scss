@@ -1,3 +1,4 @@
+@import "eq";
 // Breakpoint viewport sizes and media queries.
 //
 // Breakpoints are defined as a map of (name: minimum width), order from small to large:
@@ -57,26 +58,10 @@
     @media (min-width: $min) {
       @content;
     }
-
-    @debug inspect(&);
-
-    $_min: "'#{$min}'";
-
-    @if not & {
-      .container-wab[min-width~=#{$_min}] {
-        @content;
-      }
-    }@else if inspect(&) == '(.container,)' or inspect(&) == '(.container-fluid,)'{
-      &-wab[min-width~=#{$_min}] {
-        @content;
-      }
-    }@else{
-      @at-root .container-wab[min-width~=#{$_min}] & {
-        @content;
-      }
-    }
-
     
+    @include gen-eq-rules(min-width, $min){
+      @content;
+    }
   } @else {
     @content;
   }
@@ -88,6 +73,10 @@
   $max: breakpoint-max($name, $breakpoints);
   @if $max {
     @media (max-width: $max) {
+      @content;
+    }
+
+    @include gen-eq-rules(max-width, $max){
       @content;
     }
   } @else {
