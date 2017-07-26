@@ -53,3 +53,5 @@ cdn:
   jquery_hash:    "sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
   tether:         https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js
   tether_hash:    "sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+
+theme: jekyll-theme-slate
